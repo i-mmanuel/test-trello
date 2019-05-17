@@ -1,0 +1,390 @@
+@import url("reset.css");
+
+body {
+	background-color: #4BBF6B;
+	font-family: Avenir, sans-serif;
+}
+
+/*----------  Header style ----------*/
+header#main-header {
+	padding: 5px;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #40A35B;
+}
+
+header#main-header #left-icons {
+	float: left;
+}
+
+header#main-header div {
+	display: inline-block;
+}
+
+header#main-header a#home-button,
+div#right-icons a {
+	width: 30px;
+	height: 30px;
+	padding-top: 3px;
+	border-radius: 3px;
+	color: #fff;
+	text-decoration: none;
+	vertical-align: middle;
+	box-sizing: border-box;
+	background-color: #7ABF8C;
+	display: inline-block;
+}
+
+header#main-header #home-button img {
+	padding-top: 2px;
+	width: 18px;
+}
+
+header#main-header #boards-button {
+	height: 30px;
+	width: 100px;
+	padding-top: 5px;
+	border-radius: 3px;
+	color: #FFFFFF;
+	text-decoration: none;
+	vertical-align: middle;
+	display: inline-block;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #7ABF8C;
+}
+
+header#main-header #boards-button img {
+	width: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+    
+header#main-header #boards-button span {
+	font-size: 15px;
+	margin-left: 10px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+header#main-header #search-bar input {
+	height: 31px;
+	border-radius: 4px;
+	padding: 0;
+	border: 0;
+	width: 180px;
+	background: #7ABF8C;
+}
+
+header#main-header #search-bar #search-button {
+    left: 300px;
+    width: 19px;
+    top: 11px;    
+	position: absolute;
+}
+
+header#main-header #brand-logo {
+	width: 75px;
+	opacity: .5;
+	margin: 5px 0;
+	vertical-align: middle;
+}
+
+header#main-header #right-icons {
+	float: right;
+}
+
+span#add-button {
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+div#right-icons a img {
+	padding-top: 3px;
+	width: 18px;
+}
+
+div#right-icons a:last-child {
+	padding-top: 5px;
+	background-color: #DFE3E6;
+	border-radius: 100%;
+}
+
+div#right-icons a:last-child span {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+/*----------  Menu bar style ----------*/
+div#menu-bar {
+	padding: 10px 15px;
+}
+
+.hover-highlight:hover {
+	background-color: #40A35B;
+}
+
+div#menu-bar a {
+	border-radius: 3px;
+	padding: 5px;
+	color: #F6F6F6;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+
+div#menu-bar h1 {
+	width: 160px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.separator {
+	color: #6FCC89;
+}
+
+div#menu-bar #info-button,
+#star-button,
+#lock-button {
+	padding: 0 5px;
+	width: 15px;
+}
+
+#lock-button {
+	padding-left: 0px;
+}
+
+div#menu-bar h3 {
+	display: inline-block;
+	font-size: 15px;
+}
+
+.user {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	background-color: #DFE3E6;
+	border-radius: 100% !important;
+} 
+
+.user span {
+	font-size: 10px;
+	font-weight: bold;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.add-contact {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	background-color: #81D298;
+	border-radius: 100% !important;
+}
+
+.add-contact img#add-contact-button {
+	padding-top: 0px;
+	padding-left: 0px;
+	width: 18px;
+}
+
+div#menu-bar-right {
+	float: right;
+}
+
+div#menu-bar-right a {
+	margin-top: -5px;
+	padding: 10px;
+}
+
+div#menu-bar-right img {
+	width: 15px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+div#menu-bar-right h4 {
+	font-size: 14px;
+	display: inline-block;
+	text-decoration: underline;
+}
+
+/*----------  Rename Board Style ----------*/
+div#rename-board {
+	width: 300px;
+	border-radius: 3px;
+	z-index: 100;
+	margin-left: 5px;
+	padding: 10px;
+	box-shadow: 0 2px #d3d3d3;
+	background-color: #FFFFFF;
+	position: absolute;
+	display: none;
+}
+
+div#rename-board header {
+	height: 30px;
+	padding-top: 3px;
+	border-bottom: 1px solid #d1d1d1;
+	text-align: center;
+}
+
+div#rename-board header h4 {
+	font-size: 14px;
+	color: #596E7A;
+	vertical-align: top;
+	display: inline-block;
+}
+
+div#rename-board header img {
+	width: 14px; 
+	left: 90px;
+	position: relative;
+	cursor: pointer;
+}
+
+div#rename-board form h2 {
+	font-size: 14px;
+	padding: 10px 0;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+div#rename-board form input#rename-board-input {
+	border: 2px solid #DFE3E6;
+	border-radius: 3px;
+	height: 35px;
+	width: 295px;
+	padding: 5px 5px 5px 15px;
+	box-sizing: border-box;
+}
+
+div#rename-board form input#rename-board-input:focus {
+    border: 2px solid #0079BF;
+}
+
+div#rename-board form input[type="submit"] {
+	height: 30px;
+	width: 120px;
+	font-size: 14px;
+	border-radius: 3px;
+	margin-top: 20px;
+	color: #FFFFFF;
+	border: none;
+	background: #5AAC44;
+	cursor: pointer;
+}
+
+/*----------  Main style ----------*/
+main {
+	width: max-content;
+}
+
+.main-section {
+	width: 280px;
+	margin-left: 5px;
+	background: #DFE3E6;
+	border-radius: 5px;
+	vertical-align: top;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.main-section header {
+	margin: 10px 0 5px 15px;
+}
+
+.main-section h2 {
+	font-size: 14px;
+	text-transform: capitalize;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.main-section img#more-button-grey {
+	width: 15px;
+	left: 132px;
+	padding: 10px;
+	position: relative;
+	vertical-align: middle;
+}
+
+#doing img#more-button-grey {
+	left: 180px;
+}
+
+#done img#more-button-grey {
+	left: 185px;
+}
+
+.main-section img#more-button-grey:hover {
+	border-radius: 3px;
+	cursor: pointer;
+	background-color: #C3CBD1;
+}
+
+div.main-section ul#items li {
+	border-radius: 3px;
+	padding: 5px 10px;
+	font-size: 14px;
+	margin: 0 10px 10px 10px;
+	box-shadow: 0 2px #d3d3d3;
+	background-color: #FFFFFF;
+	text-transform: capitalize;
+	box-sizing: border-box;
+}
+
+div.main-section footer {
+	height: 35px;
+	padding-left: 15px;
+	padding-top: 5px;
+	font-size: 15px;
+	color: #798D99;
+	border-bottom-right-radius:  5px;
+	border-bottom-left-radius:  5px;
+	box-sizing: border-box;
+}
+
+div.main-section footer  a {
+	font-size: 20px;
+}
+
+div.main-section footer:hover {
+	background-color: #C3CBD1;
+	color: #17394D;
+}
+
+div.main-section footer span {
+	font-size: 14px;
+	vertical-align: middle;
+}
+
+div.main-section footer span:hover {
+	text-decoration: underline;
+}
+
+#add-card span {
+	font-size: 16px;
+	vertical-align: middle;
+}
+
+#add-card {
+	font-size: 14px;
+	margin-left: 5px;
+	width: 270px;
+	height: 27px;
+	padding: 14px 0 0px 10px;
+	color: #D9EEDF;
+	border-radius: 3px;
+	background-color: #42A85E;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#add-card:hover {
+	background-color: #399151;
+}

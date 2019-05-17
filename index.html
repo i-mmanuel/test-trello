@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang=en-US>
+	<head>
+		<meta charset=UTF-8 />
+		<title>Vacation planning | Trello</title>
+		<link rel="stylesheet" href="assets/stylesheets/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/javascripts/application.js"></script>
+	</head>
+
+	<body>
+		<header id="main-header">
+			<div id="left-icons">
+				<a href="#" id="home-button"><img src="assets/images/icons/home-logo.png"></a>
+				<a href="#" id="boards-button">
+					<img src="assets/images/icons/trello-small.png" />
+					<span>Boards</span>
+				</a>
+				<label for="search-bar" id="search-bar">
+					<input type="search" name="search-bar" />
+					<img src="assets/images/icons/search-button.png" id="search-button" alt="search button" />
+				</label>
+			</div>
+			<div>
+				<a><img src="assets/images/icons/Trello-logo-white.png" id="brand-logo" alt="brand-logo" /></a>
+			</div>
+
+			<div id="right-icons">
+				<a href="#"><span id="add-button">&#65291;</span></a>
+				<a href="#"><img src="assets/images/icons/info-button.png" id="info-button" alt="info button" /></a>
+				<a href="#"><img src="assets/images/icons/notification-button.png" id="notification-button" alt="notification-button" id="user-logo" alt="user image" /></a>
+				<a href="#" ><span>ea</span></a>
+			</div>
+		</header>
+
+        <div id="menu-bar">
+			<a href="#" class="hover-highlight" id="board-title"><h1>Vacation planning</h1></a>
+			<a href="#" class="hover-highlight"><img src="assets/images/icons/star-button.png" id="star-button" alt="star button" /></a>
+			<span span class="separator">|</span>
+			<a href="#" class="hover-highlight"><h3>Personal</h3></a>
+			<span class="separator">|</span>
+			<a href="#" class="hover-highlight"><img src="assets/images/icons/lock-button.png" id="lock-button" alt="lock button" /><h3>Private</h3></a>
+			<span span class="separator">|</span>
+			<a href="#" class="user"><span>ea</span></a>
+			<a href="#" class="add-contact"><img src="assets/images/icons/add-contact-button.png" id="add-contact-button" alt="star button" /></a>
+
+			<div id="menu-bar-right">
+				<a href="#" class="hover-highlight">
+					<img src="assets/images/icons/more-button.png" id="more-button" alt="more button" />
+					<h4>Show Menu</h4>
+				</a>
+			</div>
+		</div>	
+
+		<div id="rename-board">
+			<header>
+				<h4>Rename Board </h4>
+				<img src="assets/images/icons/close-button-grey.png" alt="close-button-grey" id="rename-board-close-button" />	
+			</header>
+			<form>
+				<label for="rename-board-input">
+					<h2>Name</h2>
+					<input type="text"  id="rename-board-input" />
+				</label>
+				<input type="submit" name="Rename" value="Rename" />
+			</form>
+		</div>
+
+		<main>
+			<div id="things-to-do" class="main-section">
+				<header>
+					<h2>Things to do</h2>
+					<img src="assets/images/icons/more-button-grey.png" id="more-button-grey" alt="more button" />
+				</header>
+				<div>
+					<ul id="items" ondragover="allowDrop(event)" ondrop="dropHandler(event)">
+						<li id="item-1" draggable=true ondragstart="dragStartHandler(event)">Book flights</li>
+						<li id="item-2" draggable=true ondragstart="dragStartHandler(event)">Find a hotel</li>
+						<li id="item-3" draggable=true ondragstart="dragStartHandler(event)">Change the carpet</li>
+					</ul>
+				</div>
+				<footer>
+					<a>&plus; <span>Add another card</span></a>
+				</footer>
+			</div>
+
+			<div id="doing" class="main-section">
+				<header>
+					<h2>Doing</h2>
+					<img src="assets/images/icons/more-button-grey.png" id="more-button-grey" alt="more button" />
+				</header>
+				<div >
+					<ul id="items" ondragover="allowDrop(event)" ondrop="dropHandler(event)">
+						<li id="item-1" draggable=true ondragstart="dragStartHandler(event)">Book flights</li>
+						<li id="item-2" draggable=true ondragstart="dragStartHandler(event)">Find a hotel</li>
+						<li id="item-3" draggable=true ondragstart="dragStartHandler(event)">Change the carpet</li>
+					</ul>
+				</div>
+				<footer>
+					<a>&plus; <span>Add another card</span></a>
+				</footer>
+			</div>
+
+			<div id="done" class="main-section">
+				<header>
+					<h2>Done</h2>
+					<img src="assets/images/icons/more-button-grey.png" id="more-button-grey" alt="more button" />
+				</header>
+				<div>
+					<ul id="items">
+						<li draggable=true>Emmanuel</li>
+						<li draggable=true>Brandon</li>
+						<li draggable=true>Ethan Hunt</li>
+					</ul>
+				</div>
+				<footer>
+					<a>&plus;  <span>Add another card</span></a>
+				</footer>
+			</div>
+
+			<a href="#" id="add-card"><span id="add-button">&#65291;</span>  Add another list</a>
+		</main>
+	</body>
+</html>
