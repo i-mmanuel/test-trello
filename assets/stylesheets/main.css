@@ -5,6 +5,18 @@ body {
 	font-family: Avenir, sans-serif;
 }
 
+.display-inline-block {
+	display: inline-block;
+}
+
+.display-inline {
+	display: inline;
+}
+
+.display-block {
+	display: block;
+}
+
 /*----------  Header style ----------*/
 header#main-header {
 	padding: 5px;
@@ -23,9 +35,9 @@ header#main-header div {
 
 header#main-header a#home-button,
 div#right-icons a {
-	width: 30px;
+	width: 33px;
 	height: 30px;
-	padding-top: 3px;
+	padding-top: 1px;
 	border-radius: 3px;
 	color: #fff;
 	text-decoration: none;
@@ -33,17 +45,18 @@ div#right-icons a {
 	box-sizing: border-box;
 	background-color: #7ABF8C;
 	display: inline-block;
+	margin-right: 4px;
 }
 
 header#main-header #home-button img {
-	padding-top: 2px;
+	padding-top: 4px;
 	width: 18px;
 }
 
 header#main-header #boards-button {
 	height: 30px;
 	width: 100px;
-	padding-top: 5px;
+	padding-top: 8px;
 	border-radius: 3px;
 	color: #FFFFFF;
 	text-decoration: none;
@@ -52,6 +65,22 @@ header#main-header #boards-button {
 	text-align: center;
 	box-sizing: border-box;
 	background-color: #7ABF8C;
+}
+
+/*----------  Board Dropdown ----------*/
+
+header div#boards-dropdown {
+	top: 100px;
+	left: 0;
+	z-index: 100;
+	position: absolute;
+	background-color: white;
+}
+
+header div#boards-dropdown #personal-boards,
+#starred-boards,
+#recent-boards {
+	display: block;
 }
 
 header#main-header #boards-button img {
@@ -95,23 +124,29 @@ header#main-header #right-icons {
 }
 
 span#add-button {
-	font-size: 25px;
-	font-weight: bolder;
+	font-size: 22px;
+	display: inline-block;
+	padding-top: 4px;
+}
+
+#notification-button {
+  background-color: #00c2e0 !important;
 }
 
 div#right-icons a img {
 	padding-top: 3px;
-	width: 18px;
+	width: 20px;
 }
 
 div#right-icons a:last-child {
-	padding-top: 5px;
+	padding-top: 8px;
 	background-color: #DFE3E6;
 	border-radius: 100%;
+	width: 29px;
 }
 
 div#right-icons a:last-child span {
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;

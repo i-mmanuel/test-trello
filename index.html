@@ -11,35 +11,87 @@
 	<body>
 		<header id="main-header">
 			<div id="left-icons">
-				<a href="#" id="home-button"><img src="assets/images/icons/home-logo.png"></a>
-				<a href="#" id="boards-button">
+				<a href="#" id="home-button">
+					<img src="assets/images/icons/home-logo.png">
+				</a><!--
+			 --><a href="#" id="boards-button">
 					<img src="assets/images/icons/trello-small.png" />
 					<span>Boards</span>
-				</a>
-				<label for="search-bar" id="search-bar">
+				</a><!--
+			 --><label for="search-bar" id="search-bar">
 					<input type="search" name="search-bar" />
 					<img src="assets/images/icons/search-button.png" id="search-button" alt="search button" />
 				</label>
+			</div>
+
+			<div id="boards-dropdown">
+				<label for="find-boards">
+					<input type="text" name="find-boards" id="find-boards-input" />
+				</label>
+				<div id="starred-boards">
+					<div>
+						<img src="assets/images/icons/star-button-grey.png" alt="star button grey" class="display-inline-block" />
+						<h3 class="display-inline-block">STARRED BOARDS</h3>
+						<span class="display-inline-block">&mdash;</span>
+					</div>
+					<p>Star your most important boards to keep them right at your fingertips.</p>
+				</div>
+				<div id="recent-boards">
+					<div>
+						<img src="assets/images/icons/clock-button-grey.png" alt="clock button grey" class="display-inline-block">
+						<h3 class="display-inline-block">RECENT BOARDS</h3>
+						<span class="display-inline-block">&mdash;</span>
+					</div>
+				</div>
+				<div id="personal-boards">
+					<div>
+						<img src="assets/images/icons/trello-button-grey.png" alt="trello button grey" class="display-inline-block" />
+						<h3 class="display-inline-block">PERSONAL BOARDS</h3>
+						<span class="display-inline-block">&mdash;</span>
+					</div>
+				</div>
+				<div id="boards-links">
+					<a href="#">Create new board</a>
+					<a href="#">Always keep this menu open</a>
+					<a href="#">See closed boards</a>
+				</div>
 			</div>
 			<div>
 				<a><img src="assets/images/icons/Trello-logo-white.png" id="brand-logo" alt="brand-logo" /></a>
 			</div>
 
 			<div id="right-icons">
-				<a href="#"><span id="add-button">&#65291;</span></a>
-				<a href="#"><img src="assets/images/icons/info-button.png" id="info-button" alt="info button" /></a>
-				<a href="#"><img src="assets/images/icons/notification-button.png" id="notification-button" alt="notification-button" id="user-logo" alt="user image" /></a>
-				<a href="#" ><span>ea</span></a>
+				<a href="#">
+					<span id="add-button">&#65291;</span>
+				</a><!--
+			 --><a href="#">
+			 		<img src="assets/images/icons/info-button.png" id="info-button" alt="info button" />
+			 	</a><!--
+			 --><a href="#" id="notification-button">
+			 		<img src="assets/images/icons/notification-button.png" alt="notification-button" id="user-logo" alt="user image" />
+			 	</a><!--
+			 --><a href="#" >
+			 		<span>ej</span>
+			 	</a>
 			</div>
 		</header>
 
         <div id="menu-bar">
-			<a href="#" class="hover-highlight" id="board-title"><h1>Vacation planning</h1></a>
-			<a href="#" class="hover-highlight"><img src="assets/images/icons/star-button.png" id="star-button" alt="star button" /></a>
-			<span span class="separator">|</span>
-			<a href="#" class="hover-highlight"><h3>Personal</h3></a>
+			<a href="#" class="hover-highlight" id="board-title">
+				<h1>Vacation planning</h1>
+			</a>
+			<a href="#" class="hover-highlight">
+				<img src="assets/images/icons/star-button.png" id="star-button" alt="star button" />
+			</a>
 			<span class="separator">|</span>
-			<a href="#" class="hover-highlight"><img src="assets/images/icons/lock-button.png" id="lock-button" alt="lock button" /><h3>Private</h3></a>
+			<a href="#" class="hover-highlight">
+				<h3>Personal</h3>
+			</a>
+			<span class="separator">|</span>
+			<a href="#" class="hover-highlight">
+				<img src="assets/images/icons/lock-button.png" id="lock-button" alt="lock button" />
+				<h3>Private</h3>
+			</a>
 			<span span class="separator">|</span>
 			<a href="#" class="user"><span>ea</span></a>
 			<a href="#" class="add-contact"><img src="assets/images/icons/add-contact-button.png" id="add-contact-button" alt="star button" /></a>
