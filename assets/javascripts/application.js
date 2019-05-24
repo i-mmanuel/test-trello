@@ -1,5 +1,4 @@
 function dragStartHandler(event) {
-    console.log("Drag has started");
     event.dataTransfer.setData("text/html", event.target.id);
 };
 
@@ -10,8 +9,9 @@ function allowDrop(event) {
 function dropHandler(event) {
     event.preventDefault();
     var data = event.dataTransfer.getData("text/html");
-    event.target.append(document.getElementById(data));
+    event.target.closest("ul").append(document.getElementById(data));
 };
+
 
 $(function() {
     $("div#rename-board form").on("submit", function(event) {
@@ -27,5 +27,10 @@ $(function() {
 
     $("img#rename-board-close-button").on("click", function() {
         $("div#rename-board").toggle();
-    })
+    }); 
+
+    $("a#boards-button").on("click", function(event) {
+        event.preventDefault();
+        $("div#boards-dropdown").slideToggle("slow");
+    });
 })

@@ -75,6 +75,7 @@ header div#boards-dropdown {
 	z-index: 100;
 	position: absolute;
 	background-color: white;
+	display: none;
 }
 
 header div#boards-dropdown #personal-boards,
@@ -119,6 +120,8 @@ header#main-header #brand-logo {
 	vertical-align: middle;
 }
 
+/*----------  Header right icons ----------*/
+
 header#main-header #right-icons {
 	float: right;
 }
@@ -138,6 +141,12 @@ div#right-icons a img {
 	width: 20px;
 }
 
+#notification-button img#user-logo {
+    width: 13px;
+	margin-top: 5px;
+	transform: rotate(35deg);
+}
+
 div#right-icons a:last-child {
 	padding-top: 8px;
 	background-color: #DFE3E6;
@@ -146,7 +155,7 @@ div#right-icons a:last-child {
 }
 
 div#right-icons a:last-child span {
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
@@ -154,16 +163,16 @@ div#right-icons a:last-child span {
 
 /*----------  Menu bar style ----------*/
 div#menu-bar {
-	padding: 10px 15px;
+	padding: 10px;
 }
 
 .hover-highlight:hover {
-	background-color: #40A35B;
+	background-color: #34864B;
 }
 
 div#menu-bar a {
 	border-radius: 3px;
-	padding: 5px;
+	padding: 10px;
 	color: #F6F6F6;
 	text-align: center;
 	text-decoration: none;
@@ -174,8 +183,8 @@ div#menu-bar a {
 
 div#menu-bar h1 {
 	width: 160px;
-	font-size: 18px;
-	font-weight: bold;
+	font-size: 19px;
+	font-weight: bolder;
 }
 
 .separator {
@@ -207,10 +216,13 @@ div#menu-bar h3 {
 } 
 
 .user span {
-	font-size: 10px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
+	display: block;
+	margin-left: -4px;
+	margin-top: -2px;
 }
 
 .add-contact {
@@ -225,6 +237,8 @@ div#menu-bar h3 {
 	padding-top: 0px;
 	padding-left: 0px;
 	width: 18px;
+	margin: -4px;
+	margin-left: -5px;
 }
 
 div#menu-bar-right {
@@ -245,7 +259,7 @@ div#menu-bar-right img {
 div#menu-bar-right h4 {
 	font-size: 14px;
 	display: inline-block;
-	text-decoration: underline;
+	border-bottom: 1px solid white;
 }
 
 /*----------  Rename Board Style ----------*/

@@ -81,7 +81,7 @@
 				<h1>Vacation planning</h1>
 			</a>
 			<a href="#" class="hover-highlight">
-				<img src="assets/images/icons/star-button.png" id="star-button" alt="star button" />
+				<img src="assets/images/icons/star-button.png" id="star-button" alt="star button" title="Click to star or unstar this board. Starred boards show up at the top of your boards list." />
 			</a>
 			<span class="separator">|</span>
 			<a href="#" class="hover-highlight">
@@ -94,7 +94,7 @@
 			</a>
 			<span span class="separator">|</span>
 			<a href="#" class="user"><span>ea</span></a>
-			<a href="#" class="add-contact"><img src="assets/images/icons/add-contact-button.png" id="add-contact-button" alt="star button" /></a>
+			<a href="#" class="add-contact"><img src="assets/images/icons/add-contact-button.png" id="add-contact-button" alt="star button" title="Invite To Board." /></a>
 
 			<div id="menu-bar-right">
 				<a href="#" class="hover-highlight">
@@ -126,9 +126,9 @@
 				</header>
 				<div>
 					<ul id="items" ondragover="allowDrop(event)" ondrop="dropHandler(event)">
-						<li id="item-1" draggable=true ondragstart="dragStartHandler(event)">Book flights</li>
-						<li id="item-2" draggable=true ondragstart="dragStartHandler(event)">Find a hotel</li>
-						<li id="item-3" draggable=true ondragstart="dragStartHandler(event)">Change the carpet</li>
+						<li id="todo-item-1" draggable=true ondragstart="dragStartHandler(event)">Book flights</li>
+						<li id="todo-item-2" draggable=true ondragstart="dragStartHandler(event)">Find a hotel</li>
+						<li id="todo-item-3" draggable=true ondragstart="dragStartHandler(event)">Change the carpet</li>
 					</ul>
 				</div>
 				<footer>
@@ -143,9 +143,9 @@
 				</header>
 				<div >
 					<ul id="items" ondragover="allowDrop(event)" ondrop="dropHandler(event)">
-						<li id="item-1" draggable=true ondragstart="dragStartHandler(event)">Book flights</li>
-						<li id="item-2" draggable=true ondragstart="dragStartHandler(event)">Find a hotel</li>
-						<li id="item-3" draggable=true ondragstart="dragStartHandler(event)">Change the carpet</li>
+						<li id="doing-item-1" draggable=true ondragstart="dragStartHandler(event)">Book flights</li>
+						<li id="doing-item-2" draggable=true ondragstart="dragStartHandler(event)">Find a hotel</li>
+						<li id="doing-item-3" draggable=true ondragstart="dragStartHandler(event)">Change the carpet</li>
 					</ul>
 				</div>
 				<footer>
@@ -159,10 +159,10 @@
 					<img src="assets/images/icons/more-button-grey.png" id="more-button-grey" alt="more button" />
 				</header>
 				<div>
-					<ul id="items">
-						<li draggable=true>Emmanuel</li>
-						<li draggable=true>Brandon</li>
-						<li draggable=true>Ethan Hunt</li>
+					<ul id="items" ondragover="allowDrop(event)" ondrop="dropHandler(event)">
+						<li id="done-item-1" draggable=true ondragstart="dragStartHandler(event)">Emmanuel</li>
+						<li id="done-item-1" draggable=true ondragstart="dragStartHandler(event)">Brandon</li>
+						<li id="done-item-1" draggable=true ondragstart="dragStartHandler(event)">Ethan Hunt</li>
 					</ul>
 				</div>
 				<footer>
