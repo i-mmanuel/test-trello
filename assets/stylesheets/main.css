@@ -58,6 +58,7 @@ header#main-header #boards-button {
 	width: 100px;
 	padding-top: 8px;
 	border-radius: 3px;
+	margin-right: 5px;
 	color: #FFFFFF;
 	text-decoration: none;
 	vertical-align: middle;
@@ -103,6 +104,7 @@ header#main-header #search-bar input {
 	padding: 0;
 	border: 0;
 	width: 180px;
+	vertical-align: middle;
 	background: #7ABF8C;
 }
 
@@ -182,13 +184,13 @@ div#menu-bar a {
 }
 
 div#menu-bar h1 {
-	width: 160px;
 	font-size: 19px;
 	font-weight: bolder;
 }
 
 .separator {
 	color: #6FCC89;
+	margin: 0 5px;
 }
 
 div#menu-bar #info-button,
@@ -376,9 +378,14 @@ main {
 	background-color: #C3CBD1;
 }
 
+ul#items {
+	padding: 5px 0;
+}
+
 div.main-section ul#items li {
+	height: 35px;
 	border-radius: 3px;
-	padding: 5px 10px;
+	padding: 10px 10px;
 	font-size: 14px;
 	margin: 0 10px 10px 10px;
 	box-shadow: 0 2px #d3d3d3;
@@ -418,7 +425,9 @@ div.main-section footer span:hover {
 
 #add-card span {
 	font-size: 16px;
-	vertical-align: middle;
+	vertical-align: top;
+	margin-top: -5px;
+	margin-right: 10px;
 }
 
 #add-card {
