@@ -166,6 +166,7 @@ div#right-icons a:last-child span {
 /*----------  Menu bar style ----------*/
 div#menu-bar {
 	padding: 10px;
+	height: 40px;
 }
 
 .hover-highlight:hover {
@@ -174,7 +175,7 @@ div#menu-bar {
 
 div#menu-bar a {
 	border-radius: 3px;
-	padding: 10px;
+	/*! padding: 10px; */
 	color: #F6F6F6;
 	text-align: center;
 	text-decoration: none;
@@ -186,6 +187,21 @@ div#menu-bar a {
 div#menu-bar h1 {
 	font-size: 19px;
 	font-weight: bolder;
+}
+
+/*----------  Rename-Input style ----------*/
+#rename-input {
+	height: 34px;
+	border: 2px #1BA4CF solid;
+	margin-left: -10px;
+	border-radius: 3px;
+	font-size: 18px;
+	padding-left: 10px; 
+	font-family: Avenir, sans-serif;
+	min-width: max-content;
+}
+
+iinput#rename-input:enabled {
 }
 
 .separator {
@@ -236,11 +252,11 @@ div#menu-bar h3 {
 }
 
 .add-contact img#add-contact-button {
-	padding-top: 0px;
+	padding-top: 0;
 	padding-left: 0px;
 	width: 18px;
-	margin: -4px;
 	margin-left: -5px;
+	margin-top: -5px;
 }
 
 div#menu-bar-right {
@@ -264,71 +280,6 @@ div#menu-bar-right h4 {
 	border-bottom: 1px solid white;
 }
 
-/*----------  Rename Board Style ----------*/
-div#rename-board {
-	width: 300px;
-	border-radius: 3px;
-	z-index: 100;
-	margin-left: 5px;
-	padding: 10px;
-	box-shadow: 0 2px #d3d3d3;
-	background-color: #FFFFFF;
-	position: absolute;
-	display: none;
-}
-
-div#rename-board header {
-	height: 30px;
-	padding-top: 3px;
-	border-bottom: 1px solid #d1d1d1;
-	text-align: center;
-}
-
-div#rename-board header h4 {
-	font-size: 14px;
-	color: #596E7A;
-	vertical-align: top;
-	display: inline-block;
-}
-
-div#rename-board header img {
-	width: 14px; 
-	left: 90px;
-	position: relative;
-	cursor: pointer;
-}
-
-div#rename-board form h2 {
-	font-size: 14px;
-	padding: 10px 0;
-	text-transform: capitalize;
-	font-weight: bold;
-}
-
-div#rename-board form input#rename-board-input {
-	border: 2px solid #DFE3E6;
-	border-radius: 3px;
-	height: 35px;
-	width: 295px;
-	padding: 5px 5px 5px 15px;
-	box-sizing: border-box;
-}
-
-div#rename-board form input#rename-board-input:focus {
-    border: 2px solid #0079BF;
-}
-
-div#rename-board form input[type="submit"] {
-	height: 30px;
-	width: 120px;
-	font-size: 14px;
-	border-radius: 3px;
-	margin-top: 20px;
-	color: #FFFFFF;
-	border: none;
-	background: #5AAC44;
-	cursor: pointer;
-}
 
 /*----------  Main style ----------*/
 main {

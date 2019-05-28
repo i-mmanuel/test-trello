@@ -12,15 +12,38 @@ function dropHandler(event) {
     event.target.closest("ul").append(document.getElementById(data));
 };
 
-function editHTML(element, parent_element) {
-    var current_text = $(element).html();
-    $(element).remove();
-    $(parent_element).append('<input type"text" id="rename-input" value=' + current_text + '/>');
-    $('input#rename-input').focusout(function() {
-        $(parent_element).append('<h1>' + $('input#rename-input').val() + '</h1>');
-        $('#rename-input').remove();
-    });
+// Checking for empty imputs
+
+function isEmpty(str) {
+    return (!str || 0 === str.length);
 }
+
+function editHTML(element, parent_element) {
+    var current_text = $(element).html(),
+        new_text;
+
+    $(element).remove();
+    $(parent_element).prepend('<input type="text" id="rename-input" onClick="this.select();" value=' + current_text + '/>');
+    $(parent_element).removeClass('hover-highlight');
+    
+    console.log('I see you!');
+
+    $('input#rename-input').focusout(function(event) {
+        // new_text = $('#rename-input').val();
+        // $(parent_element).append('<h1>' + new_text + '</h1>');
+        $('input#rename-input').remove();
+        // $('title').html(new_text + ' | Trello');
+    });
+
+    $('input#rename-input').keypress(function(event) {
+        if (event.which == 13) {
+            var new_text = $('input#rename-input').val();
+            $(parent_element).append('<h1>' + $('input#rename-input').val() + '</h1>');
+            $('#rename-input').remove();
+            $('title').html(new_text + ' | Trello');
+        };
+    });
+};
 
 $(function() {
     $("div#rename-board form").on("submit", function(event) {
@@ -28,16 +51,14 @@ $(function() {
         var current_title = $("#menu-bar h1").html();
     });
 
-    $("a#board-title h1").on("click", function(event) {
-        editHTML('#menu-bar h1', 'a#board-title');
-        // $('#board-title').append()
-        // $("#rename-board-input").attr("value", current_title)
-        // $("div#rename-board").toggle();
-    });
+    $('a#board-title').on('click', function(event) {
+        event.preventDefault();
+    })
 
-    $("img#rename-board-close-button").on("click", function() {
-        $("div#rename-board").toggle();
-    }); 
+    $("a#board-title h1").on("click", function(event) {
+        event.preventDefault();
+        editHTML('h1.board-name', 'a#board-title');
+    });
 
     $("a#boards-button").on("click", function(event) {
         event.preventDefault();
