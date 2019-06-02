@@ -167,6 +167,8 @@ div#right-icons a:last-child span {
 div#menu-bar {
 	padding: 10px;
 	height: 40px;
+	padding-top: 0;
+	margin-top: 5px;
 }
 
 .hover-highlight:hover {
@@ -175,13 +177,14 @@ div#menu-bar {
 
 div#menu-bar a {
 	border-radius: 3px;
-	/*! padding: 10px; */
+	padding: 10px;
 	color: #F6F6F6;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	box-sizing: border-box;
 	vertical-align: middle;
+	margin-left: 5px;
 }
 
 div#menu-bar h1 {
@@ -191,14 +194,14 @@ div#menu-bar h1 {
 
 /*----------  Rename-Input style ----------*/
 #rename-input {
-	height: 34px;
+	height: 30px;
 	border: 2px #1BA4CF solid;
 	margin-left: -10px;
 	border-radius: 3px;
 	font-size: 18px;
 	padding-left: 10px; 
 	font-family: Avenir, sans-serif;
-	min-width: max-content;
+	margin-top: -5px;
 }
 
 iinput#rename-input:enabled {
@@ -261,6 +264,7 @@ div#menu-bar h3 {
 
 div#menu-bar-right {
 	float: right;
+	margin-top: 5px;
 }
 
 div#menu-bar-right a {
