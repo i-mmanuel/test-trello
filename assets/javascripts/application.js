@@ -12,7 +12,7 @@ function dropHandler(event) {
     event.target.closest("ul").append(document.getElementById(data));
 };
 
-// Checking for empty imputs
+// Checking for empty inputs. Not in use
 
 function isEmpty(str) {
     return (!str || 0 === str.length);
