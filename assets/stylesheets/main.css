@@ -1,12 +1,8 @@
-@import url('whitespace-reset.css');
+@import url("reset.css");
 
 body {
 	background-color: #4BBF6B;
-	font-family: "Montserrat", "Avenir", sans-serif;
-}
-
-body a {
-    text-decoration: none;
+	font-family: Avenir, sans-serif;
 }
 
 .display-inline-block {
@@ -17,14 +13,13 @@ body a {
 	display: inline;
 }
 
-\
 .display-block {
 	display: block;
 }
 
 /*----------  Header style ----------*/
 header#main-header {
-	padding: 4px;
+	padding: 5px;
 	text-align: center;
 	box-sizing: border-box;
 	background-color: #40A35B;
@@ -40,9 +35,9 @@ header#main-header div {
 
 header#main-header a#home-button,
 div#right-icons a {
-	width: 32px;
-	height: 32px;
-	padding-top: 0px;
+	width: 33px;
+	height: 30px;
+	padding-top: 1px;
 	border-radius: 3px;
 	color: #fff;
 	text-decoration: none;
@@ -54,14 +49,14 @@ div#right-icons a {
 }
 
 header#main-header #home-button img {
-	width: 19px;
-	padding-top: 5px;
+	padding-top: 4px;
+	width: 18px;
 }
 
 header#main-header #boards-button {
 	height: 30px;
 	width: 100px;
-	padding-top: 3px;
+	padding-top: 8px;
 	border-radius: 3px;
 	margin-right: 5px;
 	color: #FFFFFF;
@@ -93,16 +88,14 @@ header div#boards-dropdown #personal-boards,
 header#main-header #boards-button img {
 	width: 15px;
 	display: inline-block;
-	/*! vertical-align:   bottom; */
+	vertical-align: middle;
 }
     
 header#main-header #boards-button span {
 	font-size: 15px;
 	margin-left: 10px;
-	vertical-align: text-bottom;
+	vertical-align: middle;
 	font-weight: bold;
-	display: inline-block;
-	margin-top: 4px;
 }
 
 header#main-header #search-bar input {
@@ -116,11 +109,10 @@ header#main-header #search-bar input {
 }
 
 header#main-header #search-bar #search-button {
-    left: -30px;
+    left: 300px;
     width: 19px;
-    top: 6px;    
-	position: relative;
-    transform: scaleX(-1);
+    top: 11px;    
+	position: absolute;
 }
 
 header#main-header #brand-logo {
@@ -139,6 +131,7 @@ header#main-header #right-icons {
 span#add-button {
 	font-size: 22px;
 	display: inline-block;
+	padding-top: 4px;
 }
 
 #notification-button {
@@ -146,7 +139,7 @@ span#add-button {
 }
 
 div#right-icons a img {
-	padding-top: 5px;
+	padding-top: 3px;
 	width: 20px;
 }
 
@@ -164,8 +157,8 @@ div#right-icons a:last-child {
 }
 
 div#right-icons a:last-child span {
-	font-size: 16px;
-	/*! font-weight: bold; */
+	font-size: 13px;
+	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -178,10 +171,13 @@ div#menu-bar {
 	margin-top: 5px;
 }
 
-div#menu-bar a,
-.add-contact {
+.hover-highlight:hover {
+	background-color: #34864B;
+}
+
+div#menu-bar a {
 	border-radius: 3px;
-	padding: 7px;
+	padding: 10px;
 	color: #F6F6F6;
 	text-align: center;
 	text-decoration: none;
@@ -189,10 +185,10 @@ div#menu-bar a,
 	box-sizing: border-box;
 	vertical-align: middle;
 	margin-left: 5px;
-	background-color: rgba(255, 255, 255, .2);
 }
 
 div#menu-bar h1 {
+	font-size: 19px;
 	font-weight: bolder;
 }
 
@@ -229,29 +225,41 @@ div#menu-bar #info-button,
 
 div#menu-bar h3 {
 	display: inline-block;
-	font-size: smaller;
-	font-weight: normal;
+	font-size: 15px;
 }
 
 .user {
 	width: 30px;
 	height: 30px;
 	padding-top: 5px;
-	background-color: #ffffff;
+	background-color: #DFE3E6;
 	border-radius: 100% !important;
-}
+} 
 
 .user span {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: bold;
 	color: #000000;
 	text-transform: uppercase;
 	display: block;
-/* 	background-color: blue;  */
+	margin-left: -4px;
+	margin-top: -2px;
 }
 
-a.add-contact {
-  font-size: smaller;	
+.add-contact {
+	width: 30px;
+	height: 30px;
+	padding-top: 5px;
+	background-color: #81D298;
+	border-radius: 100% !important;
+}
+
+.add-contact img#add-contact-button {
+	padding-top: 0;
+	padding-left: 0px;
+	width: 18px;
+	margin-left: -5px;
+	margin-top: -5px;
 }
 
 div#menu-bar-right {
@@ -260,8 +268,8 @@ div#menu-bar-right {
 }
 
 div#menu-bar-right a {
-	padding: 7px;
-	background-color: rgba(255, 255, 255, .2);
+	margin-top: -5px;
+	padding: 10px;
 }
 
 div#menu-bar-right img {
@@ -273,54 +281,51 @@ div#menu-bar-right img {
 div#menu-bar-right h4 {
 	font-size: 14px;
 	display: inline-block;
-	/*! border-bottom: 1px solid white; */
+	border-bottom: 1px solid white;
 }
 
 
 /*----------  Main style ----------*/
 main {
 	width: max-content;
-	display: inline-block;
-	vertical-align: top;
 }
 
 .main-section {
 	width: 280px;
 	margin-left: 5px;
-	border-radius: 5px;
-	padding-top: 5px;
 	background: #DFE3E6;
+	border-radius: 5px;
 	vertical-align: top;
 	box-sizing: border-box;
 	display: inline-block;
-	padding-bottom: 5px;
 }
 
 .main-section header {
-    height: 35px;
+	margin: 10px 0 5px 15px;
 }
 
 .main-section h2 {
 	font-size: 14px;
-	margin-left: 13px;
 	text-transform: capitalize;
 	font-weight: bold;
-	padding: 9px 0px;
 	display: inline-block;
 }
 
-.main-section img#more-button-grey,
-section#list-title img {
+.main-section img#more-button-grey {
 	width: 15px;
+	left: 132px;
 	padding: 10px;
-	margin-right: 5px;
-	float: right;
+	position: relative;
+	vertical-align: middle;
 }
 
-..main-section #footer-img {
-	border: 3px solid blue;
+#doing img#more-button-grey {
+	left: 180px;
 }
 
+#done img#more-button-grey {
+	left: 185px;
+}
 
 .main-section img#more-button-grey:hover {
 	border-radius: 3px;
@@ -328,38 +333,35 @@ section#list-title img {
 	background-color: #C3CBD1;
 }
 
-ul.items {
+ul#items {
 	padding: 5px 0;
 }
 
-div.main-section ul.items li {
-	line-height: 1.5em;
+div.main-section ul#items li {
+	height: 35px;
 	border-radius: 3px;
 	padding: 10px 10px;
 	font-size: 14px;
-	margin: 0 5px 10px 5px;
+	margin: 0 10px 10px 10px;
 	box-shadow: 0 2px #d3d3d3;
 	background-color: #FFFFFF;
 	text-transform: capitalize;
 	box-sizing: border-box;
-	cursor: pointer;
 }
 
 div.main-section footer {
 	height: 35px;
-	padding-top: 10px;
+	padding-left: 15px;
+	padding-top: 5px;
 	font-size: 15px;
-	width: 270px;
-	cursor: pointer;
-	text-align: center;
-	margin: 0 auto;
 	color: #798D99;
+	border-bottom-right-radius:  5px;
+	border-bottom-left-radius:  5px;
 	box-sizing: border-box;
 }
 
-div.main-section footer a {
-	font-size: 0.9em;
-	text-decoration: none;
+div.main-section footer  a {
+	font-size: 20px;
 }
 
 div.main-section footer:hover {
@@ -369,7 +371,6 @@ div.main-section footer:hover {
 
 div.main-section footer span {
 	font-size: 14px;
-	text-decoration: none; 
 	vertical-align: middle;
 }
 
@@ -384,7 +385,7 @@ div.main-section footer span:hover {
 	margin-right: 10px;
 }
 
-#add-list{
+#add-card {
 	font-size: 14px;
 	margin-left: 5px;
 	width: 270px;
@@ -399,85 +400,4 @@ div.main-section footer span:hover {
 
 #add-card:hover {
 	background-color: #399151;
-}
-
-section#list-title {
-	border-radius: 5px;
-	padding: 5px;
-	background: #DFE3E6;
-	display: inline-block;
-}
-
-section#card-title .footer-img,
-section#list-title .footer-img {
-	margin-top: 10px;
-}
-
-section#card-title form textarea {
-  font-family: 'Montserrat';
-	display: block;
-	border: 1px solid blue;
-	box-sizing: border-box;
-	box-shadow: 0 2px #d3d3d3;
-	font-size: 1.1em;
-	padding: 10px 10px;
-	height: 60px;
-	margin: 0 auto;
-	width: 270px;
-}
-
-section#card-title form textarea::placeholder {
-  font-family: 'Montserrat';
-	font-size: 0.8em;
-}
-
-
-section#list-title form input[type=text] {
-	display: block;
-	font-size: 0.8em;
-	width: 270px;
-	padding: 10px
-}
-
-section#list-title form input[type=text]:active {
-/* 	border: 1px solid blue; */
-}
-
-section#card-title form input::placeholder,
-section#list-title form input::placeholder {
-	color: grey;
-}
-
-section#card-title form input[type='submit'],
-section#list-title form input[type='submit'] {
-  width: 95px;
-	height: 32px;
-	margin: 10px 5px 5px 5px;
-	border-radius: 5px;
-	font-size: 0.93em;
-	cursor: pointer;
-	background-color: #5aac44;
-	color: white;
-	border: none; 
-	text-align: center;
-}
-
-section#card-title form button,
-section#list-title form button {
-	border: none; 
-	font-size: 20px;
-	background: none;
-}
-
-section form button a {
-	color: #6b778c;
-}
-
-.footer-img {
-	cursor: pointer;
-	padding-left: 0;
-}
-
-.footer-img:hover {
-	background-color: rgba(255, 255, 255, .5);
 }
